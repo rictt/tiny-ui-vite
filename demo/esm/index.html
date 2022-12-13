@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Demo</h1>
+  <div id="app"></div>
+  <script type="module">
+    // import { createApp } from "../../node_modules/vue/dist/vue.esm-bundler.js";
+    import { createApp } from "vue/dist/vue.esm-bundler.js";
+    // import TinyUI, { RenderButton, TSXButton, TSButton } from "../../dist/tiny-ui-vite.esm.js";
+    import TinyUI, { RenderButton, TSXButton, TSButton } from "../../dist/tiny-ui-vite.mjs";
+
+    createApp({
+      template: `
+        <RenderButton />
+        <TSXButton />
+        <TSButton />
+      `
+    }).use(TinyUI).mount('#app')
+  </script>
+</body>
+</html>
