@@ -1,5 +1,4 @@
 import { createApp } from "vue"
+import App from './app.vue'
 
-import SButton from './button/tsbutton'
-
-createApp(SButton).mount("#app")
+createApp(App).mount("#app")

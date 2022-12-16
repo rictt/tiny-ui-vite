@@ -13,13 +13,12 @@
     // import { createApp } from "../../node_modules/vue/dist/vue.esm-bundler.js";
     import { createApp } from "vue/dist/vue.esm-bundler.js";
     // import TinyUI, { RenderButton, TSXButton, TSButton } from "../../dist/tiny-ui-vite.esm.js";
-    import TinyUI, { RenderButton, TSXButton, TSButton } from "../../dist/tiny-ui-vite.mjs";
+    import TinyUI, { VButton } from "../../dist/tiny-ui-vite.mjs";
+    import "../../dist/assets/entry.86be65b6.css";
 
     createApp({
       template: `
-        <RenderButton />
-        <TSXButton />
-        <TSButton />
+        <VButton />
       `
     }).use(TinyUI).mount('#app')
   </script>
