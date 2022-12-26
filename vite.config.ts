@@ -29,5 +29,13 @@ export default defineConfig({
     vue(),
     vueJSX({}),
     Unocss()
-  ]
+  ],
+
+  test: {
+    globals: true,
+    environment: "happy-dom",
+    transformMode: {
+      web: [/.[tj]sx$/]
+    }
+  }
 })
