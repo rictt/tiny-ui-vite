@@ -17,7 +17,9 @@ export default defineConfig({
   build: {
     cssCodeSplit: true,
     rollupOptions,
-    minify: false,
+    // minify: false,
+    minify: "terser",
+    sourcemap: true,
     lib: {
       entry: "./src/entry.ts",
       name: "TinyUIVite",
