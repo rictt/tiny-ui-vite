@@ -1,14 +1,12 @@
-import { App } from "vue"
-import VButton from "./button"
+import { App } from "vue";
+import VButton from "./button";
 
 // 单独导出
-export {
-  VButton
-}
+export { VButton };
 
 // 全部导出
 export default {
   install(app: App): void {
-    app.component(VButton.name, VButton)
-  }
-}
+    app.component(VButton.name, VButton);
+  },
+};

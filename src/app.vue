@@ -8,17 +8,15 @@
     <VButton color="indigo" icon="check">测试</VButton>
     <VButton color="gray" icon="message">测试</VButton>
   </div>
-  <div>
-
-  </div>
+  <div></div>
 </template>
 
 <script lang="ts">
-import VButton from "./button"
+import VButton from "./button";
 
 export default {
   components: {
-    VButton
-  }
-}
+    VButton,
+  },
+};
 </script>
